@@ -1,0 +1,15 @@
+
+First step:
+	Create a graph db of many decks
+	Possible relationships:
+		card: name, color, type, subtype, rulestext
+		deck: name, format, standing
+		printing: name, set, number, multiverseid, img_url
+		set: name
+		card -in> deck
+		card -printings> printing
+		card -in> set
+		printing -in> set
+
+	
+
