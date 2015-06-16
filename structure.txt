@@ -29,7 +29,7 @@ D 90	40	15	0
 E
 
 
-re map?
+re map? NOPE. no solution. non linear transformation required
 A	(x,x,x,y)	100
 B	(x,x,x,x)	50
 C	(y,y,y,y)	25
@@ -38,3 +38,17 @@ E	(z,z,z,z)	?
 
 (x-y)^2 == 50^2
 4(x-y)^2 == 25^2
+
+
+Card structure:
+
+NAME	COST
+SUPER TYPE - SUB TYPE
+RULES TEXT
+[P/T]
+
+RULES TEXT has the following format:
+modal		:= [Choose one:] {rt,}
+etb		:= When ~ enters the battlefield {rt,}
+target		:= target {card_type}
+card_type	:= [non-][permanant|{card_type}spell|{type}]
